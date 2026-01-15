@@ -14,9 +14,13 @@ class I18n:
                 "pt": "1) Conectar ao servidor\n2) Gerar arquivos locais",
                 "en": "1) Connect to server\n2) Generate local files"
             },
-            "mode_selected": {
-                "pt": "Modo selecionado:",
-                "en": "Selected mode:"
+            "server_questions": {
+                "pt": "Informe os dados de conexão ao servidor:",
+                "en": "Enter the server connection data:"
+            },
+            "local_selected": {
+                "pt": "Modo local selecionado. Os arquivos serão gerados aqui.",
+                "en": "Local mode selected. Files will be generated here."
             }
         }
         return messages.get(key, {}).get(self.lang, "")
