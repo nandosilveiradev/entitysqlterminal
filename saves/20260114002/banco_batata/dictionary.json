@@ -1,0 +1,28 @@
+{
+  "database": "batata",
+  "entities": [
+    {
+      "name": "cliente",
+      "fields": [
+        {
+          "name": "nome",
+          "type": "VARCHAR(100)",
+          "pk": false,
+          "nullable": false
+        },
+        {
+          "name": "id",
+          "type": "int",
+          "pk": true,
+          "nullable": false
+        },
+        {
+          "name": "sobrenome",
+          "type": "varchar(100)",
+          "pk": false,
+          "nullable": false
+        }
+      ]
+    }
+  ]
+}

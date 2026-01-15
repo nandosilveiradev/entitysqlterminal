@@ -1,0 +1,3 @@
+Database: teste
+Entities:
+- cliente(id_cliente INT PK, nome VARCHAR(100))

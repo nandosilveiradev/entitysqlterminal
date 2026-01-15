@@ -1,0 +1,19 @@
+{
+  "database": "teste",
+  "entities": [
+    {
+      "name": "cliente",
+      "fields": [
+        {
+          "name": "id_cliente",
+          "type": "INT",
+          "pk": true
+        },
+        {
+          "name": "nome",
+          "type": "VARCHAR(100)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+CREATE TABLE cliente (
+  id_cliente INT PRIMARY KEY AUTO_INCREMENT,
+  nome VARCHAR(100)
+);
