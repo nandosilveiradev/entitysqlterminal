@@ -1,18 +1,22 @@
+# views/i18n.py
+
 class I18n:
-    def __init__(self, lang="pt"):
+    def __init__(self, lang="en"):
         self.lang = lang
 
-    def ask_mode(self):
-        return {
-            "pt": "Você deseja conectar este programa a um servidor de banco de dados (MySQL, PostgreSQL, etc.) para criar as tabelas diretamente nele, ou prefere trabalhar apenas localmente gerando os arquivos (schema.sql, dictionary.json) para enviar manualmente depois?",
-            "en": "Do you want to connect this program to a database server (MySQL, PostgreSQL, etc.) to create tables directly, or do you prefer working locally generating files (schema.sql, dictionary.json) to send manually later?"
-        }[self.lang]
-
-    def option_server(self):
-        return {"pt": "Conectar a um servidor de banco de dados", "en": "Connect to a database server"}[self.lang]
-
-    def option_local(self):
-        return {"pt": "Gerar arquivos localmente", "en": "Generate files locally"}[self.lang]
-
-    def invalid_option(self):
-        return {"pt": "Opção inválida, escolha 1 ou 2.", "en": "Invalid option, choose 1 or 2."}[self.lang]
+    def text(self, key):
+        messages = {
+            "mode_intro": {
+                "pt": "Selecione o modo de operação. Essa escolha define como o programa vai funcionar.",
+                "en": "Select the operation mode. This choice defines how the program will work."
+            },
+            "mode_options": {
+                "pt": "1) Conectar ao servidor\n2) Gerar arquivos locais",
+                "en": "1) Connect to server\n2) Generate local files"
+            },
+            "mode_selected": {
+                "pt": "Modo selecionado:",
+                "en": "Selected mode:"
+            }
+        }
+        return messages.get(key, {}).get(self.lang, "")
