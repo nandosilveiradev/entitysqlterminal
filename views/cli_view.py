@@ -1,4 +1,4 @@
-# views/cli_view.py
+# view/cli_view.py
 
 class CLIView:
     def show_message(self, message):

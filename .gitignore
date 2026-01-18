@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+
+*.db
+
+saves/
+view_state.txt
+
+venv/
+.env
+
+*.log
